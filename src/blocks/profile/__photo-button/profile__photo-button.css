@@ -1,0 +1,30 @@
+.profile__photo-button {
+  width: 150px;
+  height: 50px;
+  margin: auto 0 auto auto;
+  border: #FFFFFF 2px solid;
+  background-color: transparent;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  background-image: url(../../../images/vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+}
+
+.profile__photo-button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 880px) {
+  .profile__photo-button {
+    margin: 15px auto 0 auto;
+    width: 100%;
+    max-width: 282px;
+  }
+}

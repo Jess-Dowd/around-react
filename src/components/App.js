@@ -49,7 +49,7 @@ function App() {
     setSelectedCard(card);
   }
 
-  function handledeleteCardClick() {
+  function handleDeleteCardClick() {
     setIsDeleteCardOpen(true);
   }
 
@@ -64,13 +64,19 @@ function App() {
   /// Update API User Info ////
   function handleUpdateUser(newInfo) {
     api.patchUserInfo(newInfo)
-      .then((res) => { setCurrentUser(res) })
+      .then((res) => { 
+        setCurrentUser(res);
+        closeAllPopups();
+       })
       .catch((err) => { console.log(err) });
   }
 
   function handleUpdateAvatar(avatar) {
     api.patchUserPic(avatar)
-      .then((res) => { setCurrentUser(res) })
+      .then((res) => { 
+        setCurrentUser(res);
+        closeAllPopups(); 
+      })
       .catch((err) => { console.log(err) });
   }
 
@@ -98,7 +104,9 @@ function App() {
       .then((res) => {
         const newCards = [...cards, res];
         setCards(newCards);
-      });
+        closeAllPopups();
+      })
+      .catch((err) => { console.log(err) });
   }
 
   function handleCardDelete(card) {
@@ -106,7 +114,8 @@ function App() {
       .then(() => {
         const newCards = cards.filter((c) => c._id !== card._id);
         setCards(newCards);
-      });
+      })
+      .catch((err) => { console.log(err) });
   }
 
   /// Markup ////
@@ -125,7 +134,7 @@ function App() {
           onClose={closeAllPopups}
           cards={cards}
           onCardLike={handleCardLike}
-          onCardDelete={handledeleteCardClick}
+          onCardDelete={handleDeleteCardClick}
           key={handleCardDelete}
         />
 

@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Around the U.S. Front End + React
+Part of the Practicum by Yandex Web Development Bootcamp Curriculum.
+The project takes the last from React using the Create React App to Express NodeJs implementing the API in the backend.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The previous project takes the one before from vanilla JS to React using the Create React App.
 
-## Available Scripts
+A responsive website using HTML5, CSS3 (flexbox, grid, BEM), JavaScript, built following the design mokup in Figma. This adaptive page includes form validation, interactive popups, fade-in and fade-out animations, functional like and delete buttons, modular JavaScript, and Object Oriented JS design.
 
-In the project directory, you can run:
+The React Framework is used to add functionality to Form Fields in a Popup Box and save the edited values. Used BEM methodology with a nested file structure.
 
-### `npm start`
+# The project interactivity includes:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Popup modals for: Updating profile info and avatar image, Adding new cards and Deleting user's owncards only
+Liking and unliking cards
+The current version is responsive gets profile information and images via API, and has functioning modal popups. The project adapts to the width of various devices (from 320px to 1280px). The project is based on dynamically editing the profile information on popup modals and adding cards of places and image popups. Everything is rendering responsively adapting to different screen sizes.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Features
 
-### `npm test`
+Form Popup Modal: editing profile information, adding/deleting cards with images and titles unsing a link to photo and Forms are validated using javascript. Image popup for each card with Delete and Like button.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Technologies
 
-### `npm run build`
+Stack: HTML5, CSS3, flexbox, grid layout, BEM, Media queries, transition, JavaScript/JSX, DOM, Debugging Git, Git/Github, Figma, Form validation, OOP, Webpack, NPM, React, React components, React hooks
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Figma
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The website was made up according to the Figma layout requirements:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Link to the project in Figma - 1
+Link to the project in Figma - 2
+Link to the project in Figma - 3
+Export images directly from Figma and optimize them here, so your project loads faster.
 
-### `npm run eject`
+# Images
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+All the images and profile info are pulled from the shared server.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Demo
+Demo link: https://jess-dowd.github.io/around-react/
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Directories
+/public — static files from the build of the React front-end app.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+/data — JSON files to temporarily emulate database integration.
 
-## Learn More
+/routes — routing files.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+All other directories are optional and may be created by the developer if necessary.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Running the Project
+npm run start — to launch the server.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm run dev — to launch the server with the hot reload feature.
